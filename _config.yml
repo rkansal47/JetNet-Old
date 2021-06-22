@@ -30,7 +30,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: pmarsceill/just-the-docs
+theme: minima
 plugins:
   - jekyll-feed
 
