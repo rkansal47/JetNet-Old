@@ -298,6 +298,7 @@ def get_polar_rel(
           or multiple jets in cartesian or polar coordinates of shape ``[num_jets, num_particles, num_features]``.
         input_cartesian (bool): Whether jet is in Cartesian coordinate. False if jet is in polar coordinates.
           Default to False.
+        return_4vec (bool): Whether to return a for vector with zero-th component being |p|. Default to False.
 
     Returns:
         type(jet): features in relative polar coordinates.
