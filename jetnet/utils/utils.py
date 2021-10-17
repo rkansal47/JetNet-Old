@@ -288,10 +288,12 @@ def get_polar_rel(
 ) -> np.ndarray or torch.Tensor:
     """
     Convert 3- or 4-vector features to relative polar coordinates.
-        ..math::
-            \eta_\mathrm{T}^\mathrm{rel} = \eta_\mathrm{T} - J_\mathrm{T},
-            \phi_\mathrm{T}^\mathrm{rel} = \phi_\mathrm{T} - J_\mathrm{T},
-            p_\mathrm{T}^\mathrm{rel} = p_\mathrm{T} / J_\mathrm{T}
+    Given jet feautures :math:`J = (J_\eta, J_\phi, J_{p_\mathrm{T}})` and particle features :math:`p = (\eta, \phi, p_\mathrm{T})`,
+    the relative coordinates are given by
+        .. math::
+            \eta_\mathrm{T}^\mathrm{rel} &= \eta - J_\eta, \\
+            \phi_\mathrm{T}^\mathrm{rel} &= \phi - J_\phi, \\
+            p_\mathrm{T}^\mathrm{rel} &= p_\mathrm{T} / J_{p_\mathrm{T}}
 
     Args:
         jet (np.ndarray or torch.Tensor): array or tensor of a single jet of shape ``[num_particles, num_features]``
