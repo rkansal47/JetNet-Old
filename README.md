@@ -1,5 +1,6 @@
 # JetNet
 
+## **This project has moved to the Jet-Net organization's [repository](https://github.com/jet-net/JetNet).**
 
 A library for developing and reproducing jet-based machine learning (ML) projects.
 
